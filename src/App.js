@@ -8,7 +8,8 @@ function App() {
     <>
      <Routes>
         <Route path='/' Component={GetStart} />
-        <Route path='/home' Component={Home} />
+        <Route path='/home' Component={Home}  />
+      
       </Routes> 
      
     </>

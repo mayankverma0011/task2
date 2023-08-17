@@ -9,7 +9,7 @@ function GetStart() {
       
     useEffect(() => {
         // Define the delay before starting the animation in milliseconds
-        const animationDelay = 3500; // 3500 milliseconds = 3.5 seconds (adjust as needed)
+        const animationDelay = 2000; // 3500 milliseconds = 3.5 seconds (adjust as needed)
     
         // Delay the start of the animation
         const delayTimer = setTimeout(() => {

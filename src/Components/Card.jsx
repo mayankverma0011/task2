@@ -1,6 +1,10 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import Smallmodel from './Smallmodle'
 function Card() {
+  const [toggle, setToggle] = useState(false);
+  const handleToggleChange = () => {
+    setToggle(!toggle);
+  };
   return (
     <>
     
@@ -8,8 +12,9 @@ function Card() {
           <div className="main-card">
             <div className="first">  
             <h1>The first Task title</h1>
-            <i class="fa-regular fa-square-check"></i>
+            <h6 id='trippledots' onClick={handleToggleChange}>...</h6>
             </div>
+            <Smallmodel toggle={toggle} handleToggleChange={handleToggleChange} />
             <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Maxime, incidunt!</p>
             <div className="sec">
               <div className="cricle">
@@ -21,6 +26,12 @@ function Card() {
             </div>
           </div>
     </div>
+
+    <div>
+                {/* <h1>{Myname}</h1> */}
+                {/* <button id='btn' onClick={changeName}>Toggle</button> */}
+
+            </div>
     </>
   )
 }
