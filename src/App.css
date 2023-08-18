@@ -31,10 +31,7 @@
   background-color: var(--third-color);
 }
 
-span {
-  font-size: 60px;
-  letter-spacing: 3px;
-}
+span {font-size: 60px;letter-spacing: 3px;}
 
 /* ===================================getstart css======================== */
 .GetStart {
@@ -43,7 +40,6 @@ span {
   display: grid;
   place-content: center;
   place-items: center;
-
 }
 
 
@@ -54,36 +50,16 @@ span {
   place-content: center;
   place-items: center;
   margin-top: 100px;
-
 }
 
-.todo {
-  font-size: 60px;
-  letter-spacing: 3px;
+.todo { font-size: 60px; letter-spacing: 3px;}
 
-}
+#t { color: var(--fifth-color);}
+#o {  color: var(--sevan-color);}
+#d {color: var(--sixth-color);}
+#O { color: var(--eight-color);}
 
-#t {
-  color: var(--fifth-color);
-}
-
-#o {
-  color: var(--sevan-color);
-}
-
-#d {
-  color: var(--sixth-color);
-}
-
-#O {
-  color: var(--eight-color);
-}
-
-p {
-  padding: 20px 0px;
-  color: var(--first-color);
-  line-height: 25px;
-}
+p { padding: 20px 0px; color: var(--first-color); line-height: 25px;}
 
 #btn {
   padding: 5px 20px;
@@ -97,90 +73,36 @@ p {
 }
 
 
-img {
-  width: 300px;
-  margin-top: 40px;
-}
+img {  width: 300px; margin-top: 40px;}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 80px;
-}
+.header { display: flex; justify-content: space-between; margin-inline: 80px;}
 
-#h {
-  font-size: 40px;
-  cursor: pointer;
-}
+#h { font-size: 40px; cursor: pointer;}
 
-.body {
-  display: flex;
-  /* justify-content: space-between; */
-  margin-inline: 80px;
+/* ================================HOME PAGE CSS===================== */
 
-}
+.body { display: flex;  margin-inline: 80px;}
 
-li:hover {
-  color: var(--fifth-color);
-  cursor: pointer;
-}
+li { list-style: none; margin-left: 45px; margin-top: 30px; }
 
-li {
-  list-style: none;
-  margin-left: 45px;
-  margin-top: 30px;
-}
+a{text-decoration: none;}
 
+a:hover{color: var(--fifth-color);  cursor: pointer;}
 
-.dot1 {
-  height: 35px;
-  width: 35px;
-  background-color: var(--sixth-color);
-  border-radius: 50%;
-  /* margin-left: 100px; */
-}
+.dot1 { height: 35px; width: 35px; background-color: var(--sixth-color); border-radius: 50%;}
 
-.dot2 {
-  height: 35px;
-  width: 35px;
-  background-color: var(--sevan-color);
-  border-radius: 50%;
-  /* margin-left: 100px; */
-}
+.dot2 { height: 35px; width: 35px; background-color: var(--sevan-color); border-radius: 50%;}
 
-.dot3 {
-  height: 35px;
-  width: 35px;
-  background-color: var(--eight-color);
-  border-radius: 50%;
-  /* margin-left: 100px; */
-}
+.dot3 { height: 35px; width: 35px; background-color: var(--eight-color); border-radius: 50%;}
 
-.dot4 {
-  height: 35px;
-  width: 35px;
-  background-color: var(--fifth-color);
-  border-radius: 50%;
-  /* margin-left: 100px; */
-}
+.dot4 { height: 35px; width: 35px; background-color: var(--fifth-color); border-radius: 50%;}
 
-#hide {
-  position: relative;
-  top: 25%;
-  font-size: 16px;
-}
+#hide { position: fixed; top: 70%; font-size: 16px;}
+
 
 /* ============================card design================ */
-.card {
-  /* display: grid;
-  grid-template-columns: auto auto;
-  
-   */
-  display: flex;
-  margin-left: 200px;
-  flex-wrap: wrap;
-}
-
+.card { position: relative; bottom: 250px; left: 250px; }
+.card-parent{display: flex; flex-wrap: wrap;}
 .main-card {
   border: 0px;
   border-radius: 5px;
@@ -188,8 +110,6 @@ li {
   background-color: var(--third-color);
   margin: 10px;
   padding: 20px;
-  margin-bottom: 50px;
-
 }
 
 .first h1 { font-size: 20px;}
@@ -199,6 +119,7 @@ li {
 .sec { display: flex; justify-content: space-between;}
 
 h6 {font-size: 15px; }
+
 #trippledots{font-size: 25px; cursor: pointer; line-height: 5px;}
 
 .first { display: flex; justify-content: space-between;margin: 0px;}
@@ -206,15 +127,12 @@ h6 {font-size: 15px; }
 
 /*=============popup model=============================== */
 .popup-model {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid; */
-  /* background-color: var(--fourth-color); */
   width: 800px;
   border-radius: 5px;
-  /* padding: 20px; */
   border-radius: 7px;
   background: var(--fourth-color);
   box-shadow: 29px 29px 57px #bebebe,
@@ -235,7 +153,6 @@ li { line-height: -150px;}
 input {
   border: 0px;
   outline: 0px;
-  /* border: 1px solid; */
   width: 700px;
   padding: 15px;
   background-color: var(--eight-color);
@@ -246,7 +163,7 @@ input {
 
 .tags {margin-left: 50px; padding: 20px;}
 
-.t { display: flex;gap: 130px;/* justify-content: center; */}
+.t { display: flex; gap: 130px;}
 
 h5 { margin-left: 40px;}
 
@@ -256,8 +173,7 @@ h5:hover {color: var(--eight-color); cursor: pointer;}
 .Edit-delte{
   padding: 0px;
   position: absolute;
-  left: 50%;
-  /* border: 1px solid; */
+  left: 70%;
   background-color: var(--fourth-color);
   z-index: 1;
   padding-inline: 15px;
@@ -272,9 +188,9 @@ h5:hover {color: var(--eight-color); cursor: pointer;}
 #smallpopup:hover{ color: var(--eight-color);}
 
 /* ===============================edit popup============== */
- .EditPopup{ position: absolute;
-  left: 50%;
-  top: 250%;
+ .EditPopup{ position: fixed;
+  left: 55%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
   border-radius: 5px;
@@ -284,3 +200,93 @@ h5:hover {color: var(--eight-color); cursor: pointer;}
     -29px -29px 57px #ffffff;
   z-index: 2000;
  }
+
+
+ /*=============================media query=============================== */
+ @media(max-width:1024px){
+  .header{padding-top: 20px;}
+#hide{ top: 55%;}
+a{font-size: 20px;}
+.dot1, .dot2, .dot3, .dot4{height: 45px; width: 45px;}
+li{line-height: 45px; margin-left: 60px;}
+.main-card{width: auto; height: auto; margin: 18px;}
+/* .card-parent{ display: flex; flex-wrap: wrap;} */
+.first h1{ font-size: 30px;}
+.card{bottom: 280px;}
+#trippledots{font-size: 46px; line-height: 0px;}
+/* p{padding: 31px 0px;} */
+#card-para{padding: 31px 0px; font-size: 20px; }
+.popup-model{top: 41%;}
+h5{margin-left: 57px;}
+.Edit-delte{width: 120px; padding: 15px;}
+.EditPopup{top: 43%;}
+ }
+ 
+ /* =========================media query for tablet=============== */
+ @media(max-width:768px){
+ 
+  #hide{ display: none; }
+.body { display: inline;  margin-inline:0px;}
+.list{display: inline; }
+li { list-style: none; margin-left: -2px; margin-top: 50px; display: flex;}
+a{text-decoration: none;}
+a:hover{color: var(--fifth-color);  cursor: pointer;}
+
+.dot1 { height: 50px; width: 50px; background-color: var(--sixth-color); border-radius: 50%; display: inline-block; margin-left:100px; margin-top: 40px; }
+
+.dot2 { height: 50px; width: 50px; background-color: var(--sevan-color); border-radius: 50%; display: inline-block; margin-left:100px; margin-top: 40px; }
+
+.dot3 { height: 50px; width: 50px; background-color: var(--eight-color); border-radius: 50%; display: inline-block; margin-left:100px; margin-top: 40px; }
+
+.dot4 { height: 50px; width: 50px; background-color: var(--fifth-color); border-radius: 50%; display: inline-block; margin-left:150px; margin-top: 40px; }
+
+.card{bottom: -30px;left: 83px;}
+.first h1{font-size: 20px;}
+#second { display: flex; justify-content: space-between;}
+#round {  display: flex; gap: 10px;}
+.popup-model{width: 600px;}
+.tags{ margin-left: -90px;}
+.t{gap: 0px;}
+h5{margin-top: 17px;}
+input{width: 457px;}
+.EditPopup {width: 600px;}
+
+ }
+
+
+
+ @media(max-width:425px){
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 80px;
+    margin-left: 25px;
+    width: 130%;
+ }
+ .card{left: 5px;}
+ .EditPopup{
+  width: 520px;
+  left: 50%;
+ }
+
+ .popup-model{
+  width: 100%;
+  height: 100%;
+  top: 50%;
+ }
+ .inp-group{
+  margin-top: 30px;
+ }
+ input{width: 500px;}
+ h3{
+  padding-bottom: 25px;
+}
+.t{display: block;}
+.dot1, .dot2, .dot3, .dot4{display: block;}
+.dot4{margin-left: 100px;} 
+
+
+
+} 
+
+ 

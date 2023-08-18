@@ -15,9 +15,9 @@ function Card() {
             <h6 id='trippledots' onClick={handleToggleChange}>...</h6>
             </div>
             <Smallmodel toggle={toggle} handleToggleChange={handleToggleChange} />
-            <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Maxime, incidunt!</p>
-            <div className="sec">
-              <div className="cricle">
+            <p id='card-para'>Lorem ipsum dolor sit amet, consecteturadipisicing elit. <br></br>Maxime, mynk kumy ia s dfj develover  incidunt!</p>
+            <div className="sec" id='second'>
+              <div className="cricle" id='round'>
               <div className="dot1"></div>
               <div className="dot2"></div>
               <div className="dot3"></div>
@@ -27,11 +27,7 @@ function Card() {
           </div>
     </div>
 
-    <div>
-                {/* <h1>{Myname}</h1> */}
-                {/* <button id='btn' onClick={changeName}>Toggle</button> */}
-
-            </div>
+  
     </>
   )
 }
