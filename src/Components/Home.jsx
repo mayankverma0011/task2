@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link, Outlet , useNavigate} from 'react-router-dom';
-import Model from './Model';
+import Model from './AddPopup';
 
 function Home() {
   const navigate = useNavigate();
@@ -22,11 +22,14 @@ function Home() {
 
       <div className="body">
         <div className="list">
+          <div className="flex">
           <div className="dot1"><Link to="work"><li>work</li></Link></div>
           <div className="dot2"><Link to="study"><li>study</li></Link></div>
-          <div className="dot3"><Link to="entertainment"><li>entertainment</li></Link></div>
+          <div className="dot3"><Link to="entertainment"><li>Enjoy</li></Link></div>
           <div className="dot4"><Link to="famliy"><li>famliy</li></Link></div>
+          </div>
           <Outlet/>
+         
         <h6 id='hide'> <i class="fa-regular fa-square-check"></i> hide task</h6>
         </div>
       

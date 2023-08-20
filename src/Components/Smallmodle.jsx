@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Edit from './Edit'
+import EditPopup from './EditPopup'
 function Smallodel({toggle, handleToggleChange,}) {
   const [showmodel, setshowmodel] = useState(false);
   const closeModel = () => setshowmodel(false);
@@ -11,7 +11,7 @@ function Smallodel({toggle, handleToggleChange,}) {
             
             <div className='Edit-delte'>
               <p id='smallpopup' onClick={() => setshowmodel(true)}>Edit</p>
-              {showmodel && <Edit closeModel = {closeModel}/> }
+              {showmodel && <EditPopup closeModel = {closeModel}/> }
               <p id='smallpopup'>Delete</p>
             </div>
             :

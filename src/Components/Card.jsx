@@ -16,11 +16,11 @@ function Card() {
             </div>
             <Smallmodel toggle={toggle} handleToggleChange={handleToggleChange} />
             <p id='card-para'>Lorem ipsum dolor sit amet, consecteturadipisicing elit. <br></br>Maxime, mynk kumy ia s dfj develover  incidunt!</p>
-            <div className="sec" id='second'>
-              <div className="cricle" id='round'>
-              <div className="dot1"></div>
-              <div className="dot2"></div>
-              <div className="dot3"></div>
+            <div className="sec">
+              <div className="cricle">
+              <div className="A"></div>
+              <div className="B"></div>
+              <div className="C"></div>
               </div>
            <h6> <i class="fa-regular fa-square-check"></i>  Done </h6>    
             </div>
