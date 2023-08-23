@@ -119,8 +119,8 @@ img {
   display: flex;
   margin-inline: 80px;
 }
-.flex{position: sticky;
-top: 20%;}
+.flex{position: fixed;
+top: 17%;}
 li {
   list-style: none;
   margin-left: 45px;
@@ -172,24 +172,28 @@ a:hover {
 
 
 /* ============================card design================ */
-.card {
-  position: relative;
-  bottom: 250px;
-  left: 250px;
-}
 
-.card-parent {
+.card {
+  display: inline-flex;
+  position: relative;
+  top: 40px;
+  left: 15%;
+  flex-wrap: wrap;
+} 
+
+/* .card-parent {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .main-card {
   border: 0px;
   border-radius: 5px;
-  width: 430px;
+  width: 350px;
   background-color: var(--third-color);
   margin: 10px;
   padding: 20px;
+ 
 }
 
 .first h1 {
@@ -353,8 +357,9 @@ h2 {
 /* ===========================small popup css========================= */
 .Edit-delte {
   padding: 0px;
-  position: absolute;
-  left: 70%;
+  position:absolute;
+  left: 60%;
+  top: 27%;
   background-color: var(--fourth-color);
   z-index: 1;
   padding-inline: 15px;
@@ -427,6 +432,14 @@ h2 {
     font-size: 30px;
   }
 
+
+  
+  
+  
+#toggleComplete {
+  text-decoration: line-through;
+  color: hwb(0 67% 33% / 0.164); /* Change to your desired color */
+}
   .card {
     bottom: 280px;
   }
@@ -437,7 +450,7 @@ h2 {
   }
 
   /* p{padding: 31px 0px;} */
-  #card-para {
+  .card-para {
     padding: 31px 0px;
     font-size: 20px;
   }
