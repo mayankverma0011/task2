@@ -1,13 +1,14 @@
-import React from 'react'
-import Card from './Card'
+import React from 'react';
+
 import "../App.css";
+
 function WrokComponent() {
   return (
-    <div  className='card-parent'> 
-     <Card/>
-     <Card/>
+    <div className='card-parent'> 
+    
+
     </div>
   )
 }
 
-export default WrokComponent
+export default WrokComponent;
