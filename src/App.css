@@ -1,28 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Slab&family=Roboto:ital,wght@1,300;1,400&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Slab&family=Roboto:ital,wght@1,300;1,400&display=swap');
-
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
-:root{
- --first-color:#69665c;
- --second-color: #B2AFA1;
- --third-color:#FFF9DE;
- --fourth-color:#ffffff;
- --fifth-color: #D1E5F7;
- --sixth-color: #DAF2D6;
- --sevan-color: #FFCECE;
- --eight-color:#D3CEFF;
+:root {
+  --first-color: #69665c;
+  --second-color: #B2AFA1;
+  --third-color: #FFF9DE;
+  --fourth-color: #ffffff;
+  --fifth-color: #D1E5F7;
+  --sixth-color: #DAF2D6;
+  --sevan-color: #FFCECE;
+  --eight-color: #D3CEFF;
 
 }
 
-.Loder{
+/* =================================loder css====================== */
+.Loder {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -31,176 +31,685 @@ font-family: 'Roboto Slab', serif;
   background-color: var(--third-color);
 }
 
-span{
+span {
   font-size: 60px;
   letter-spacing: 3px;
 }
 
-.GetStart{
+/* ===================================getstart css======================== */
+.GetStart {
   width: 100%;
   height: 100vh;
-display: grid;
-place-content: center;
-place-items: center;
-
+  display: grid;
+  place-content: center;
+  place-items: center;
 }
 
-
-.main{
+.main {
   width: 600px;
   height: 100vh;
   display: grid;
   place-content: center;
   place-items: center;
   margin-top: 100px;
- 
-  }
+}
 
-  .todo{
-    font-size: 60px;
-    letter-spacing: 3px;
-    
-  }
-  #t{
-    color: var(--fifth-color);
-  }
-  #o{
-    color: var(--sevan-color);
-  }
-  #d{
-    color: var(--sixth-color);
-  }
-  #O{
-    color: var(--eight-color);
-  }
-p{
+.todo {
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+#t {
+  color: var(--fifth-color);
+}
+
+#o {
+  color: var(--sevan-color);
+}
+
+#d {
+  color: var(--sixth-color);
+}
+
+#O {
+  color: var(--eight-color);
+}
+
+p {
   padding: 20px 0px;
   color: var(--first-color);
   line-height: 25px;
 }
- 
-#btn{
-padding: 5px 20px;
-font-size: 15px;
-color: var(--fourth-color);
-background-color: var(--first-color);
-outline: 0px;
-border: 0px;
-border: 1px solid var(--first-color);
-border-radius: 5px;
+
+#btn {
+  padding: 5px 20px;
+  font-size: 15px;
+  color: var(--fourth-color);
+  background-color: var(--first-color);
+  outline: 0px;
+  border: 0px;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
 }
 
 
- img{
+img {
   width: 300px;
   margin-top: 40px;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   margin-inline: 80px;
+  position:sticky;
+  top: 0%;
+  z-index: 1;
+  background-color: #fff;
 }
-#h{
+
+#h {
   font-size: 40px;
+  cursor: pointer;
 }
 
-.body{
+/* ================================HOME PAGE CSS===================== */
+
+.body {
   display: flex;
-  /* justify-content: space-between; */
   margin-inline: 80px;
-  
 }
-
-li:hover{
- color: var(--fifth-color);
-}
-li{
+.flex{position: fixed;
+top: 17%;}
+li {
   list-style: none;
   margin-left: 45px;
   margin-top: 30px;
 }
 
+a {
+  text-decoration: none;
+}
 
- .dot1 {
+a:hover {
+  color: var(--fifth-color);
+  cursor: pointer;
+}
+
+.dot1 {
   height: 35px;
   width: 35px;
   background-color: var(--sixth-color);
   border-radius: 50%;
-  /* margin-left: 100px; */
-} 
+}
 
 .dot2 {
   height: 35px;
   width: 35px;
   background-color: var(--sevan-color);
   border-radius: 50%;
-  /* margin-left: 100px; */
-} 
+}
 
 .dot3 {
   height: 35px;
   width: 35px;
   background-color: var(--eight-color);
   border-radius: 50%;
-  /* margin-left: 100px; */
-} 
+}
 
 .dot4 {
   height: 35px;
   width: 35px;
   background-color: var(--fifth-color);
   border-radius: 50%;
-  /* margin-left: 100px; */
-} 
-/* ====================card design================ */
-.card{
-  /* display: grid;
-  grid-template-columns: auto auto;
-  
-   */
-   display: flex;
-   margin-left: 200px;
-   flex-wrap: wrap;
-}
-.main-card{
-  border: 0px;
-  border-radius: 5px;
-  width: 430px;
-  background-color: var(--third-color);
-  margin: 10px;
-  padding: 20px;
-  margin-bottom: 50px;
- 
 }
 
-.first h1{
-  font-size: 20px;
-}
-
-h5{
-  position: relative;
-  top: 25%;
+#hide {
+  position: fixed;
+  top: 70%;
   font-size: 16px;
 }
 
-.cricle{
-  display: flex;
-  gap: 10px;
 
-}
-.sec{
-  display: flex;
-  justify-content: space-between;
-}
+/* ============================card design================ */
 
-h6{
-  font-size: 15px;
+.card {
+  display: inline-flex;
+  position: relative;
+  top: 40px;
+  left: 15%;
+  flex-wrap: wrap;
+} 
+
+/* .card-parent {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.main-card {
+  border: 0px;
+  border-radius: 5px;
+  width: 350px;
+  background-color: var(--third-color);
+  margin: 10px;
+  padding: 20px;
  
 }
 
-.first{
+.first h1 {
+  font-size: 20px;
+}
+
+.cricle {
+  display: flex;
+  gap: 10px;
+}
+
+.sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+#trippledots {
+  font-size: 25px;
+  cursor: pointer;
+  line-height: 5px;
+}
+
+.first {
   display: flex;
   justify-content: space-between;
   margin: 0px;
+}
+
+.A {
+  height: 35px;
+  width: 35px;
+  background-color: var(--fifth-color);
+  border-radius: 50%;
+}
+
+.B {
+  height: 35px;
+  width: 35px;
+  background-color: var(--sevan-color);
+  border-radius: 50%;
+}
+
+.C {
+  height: 35px;
+  width: 35px;
+  background-color: var(--eight-color);
+  border-radius: 50%;
+}
+
+
+/*=============popup model=============================== */
+.popup-model {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  border-radius: 5px;
+  border-radius: 7px;
+  background: var(--fourth-color);
+  box-shadow: 29px 29px 57px #bebebe,
+    -29px -29px 57px #ffffff;
+  z-index: 10000;
+}
+
+.m {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 40px;
+}
+
+#close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h3 {
+  padding: 8px;
+}
+
+li {
+  line-height: -150px;
+}
+
+.inp-group {
+  margin-left: 50px;
+  padding: 10px;
+}
+
+input {
+  border: 0px;
+  outline: 0px;
+  width: 700px;
+  padding: 15px;
+  background-color: var(--eight-color);
+  border-radius: 5px;
+}
+
+#inpt {
+  height: 150px;
+}
+
+.tags {
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.t {
+  display: flex;
+  gap: 130px;
+}
+
+h5 {
+  margin-left: 40px;
+}
+
+h5:hover {
+  color: var(--eight-color);
+  cursor: pointer;
+}
+
+.D {
+  height: 35px;
+  width: 35px;
+  background-color: var(--sixth-color);
+  border-radius: 50%;
+}
+
+.E {
+  height: 35px;
+  width: 35px;
+  background-color: var(--sevan-color);
+  border-radius: 50%;
+}
+
+.F {
+  height: 35px;
+  width: 35px;
+  background-color: var(--eight-color);
+  border-radius: 50%;
+}
+
+.G {
+  height: 35px;
+  width: 35px;
+  background-color: var(--fifth-color);
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 15px;
+  margin-left: 50px;
+  line-height: 30px;
+}
+
+
+/* ===========================small popup css========================= */
+.Edit-delte {
+  padding: 0px;
+  position:absolute;
+  left: 60%;
+  top: 27%;
+  background-color: var(--fourth-color);
+  z-index: 1;
+  padding-inline: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#smallpopup {
+  padding: 0px;
+  font-size: 15px;
+}
+
+#smallpopup:hover {
+  color: var(--eight-color);
+}
+
+/* ===============================edit popup============== */
+.EditPopup {
+  position: fixed;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  border-radius: 5px;
+  border-radius: 7px;
+  background: var(--fourth-color);
+  box-shadow: 29px 29px 57px #bebebe,
+    -29px -29px 57px #ffffff;
+  z-index: 2000;
+}
+
+
+/*=============================media query=============================== */
+@media(max-width:1024px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  #hide {
+    top: 55%;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  .dot1,
+  .dot2,
+  .dot3,
+  .dot4 {
+    height: 45px;
+    width: 45px;
+  }
+
+  li {
+    line-height: 45px;
+    margin-left: 60px;
+  }
+
+  .main-card {
+    width: auto;
+    height: auto;
+    margin: 18px;
+  }
+
+  /* .card-parent{ display: flex; flex-wrap: wrap;} */
+  .first h1 {
+    font-size: 30px;
+  }
+
+
+  
+  
+  
+#toggleComplete {
+  text-decoration: line-through;
+  color: hwb(0 67% 33% / 0.164); /* Change to your desired color */
+}
+  .card {
+    bottom: 280px;
+  }
+
+  #trippledots {
+    font-size: 46px;
+    line-height: 0px;
+  }
+
+  /* p{padding: 31px 0px;} */
+  .card-para {
+    padding: 31px 0px;
+    font-size: 20px;
+  }
+
+  .popup-model {
+    top: 41%;
+  }
+
+  h5 {
+    margin-left: 57px;
+  }
+
+  .Edit-delte {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .EditPopup {
+    top: 43%;
+  }
+}
+
+/* =========================media query for tablet=============== */
+@media(max-width:768px) {
+
+.flex{
+   position: fixed;
+    width: 100%;
+    top: 7%;
+    z-index: 1;
+  }
+
+  
+  #hide {
+    display: none;
+  }
+
+  .body {
+    display: inline;
+    margin-inline: 0px;
+  }
+
+  .list {
+    display: inline;
+  }
+
+  li {
+    list-style: none;
+    margin-left: -2px;
+    margin-top: 50px;
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--fifth-color);
+    cursor: pointer;
+  }
+
+  .dot1 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--sixth-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+
+  .dot2 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--sevan-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+
+  .dot3 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--eight-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+
+  .dot4 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--fifth-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+
+  .card {
+    top:117px;
+    left: 83px;
+  }
+
+  .first h1 {
+    font-size: 20px;
+  }
+
+  #card-para {
+    padding: 45px 0px;
+    font-size: 23px;
+  }
+
+  .inp-group {
+    padding: 25px 0px;
+  }
+
+  #close {
+    font-size: 38px;
+  }
+
+  h3 {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .t {
+    display: grid;
+    gap: 31px;
+    margin-top: 17px;
+  }
+
+  .popup-model {
+    width: 100%;
+    height: 100%;
+    top: 51%;
+  }
+
+  input {
+    width: 660px;
+  }
+
+  h5 {
+    margin-top: 17px;
+  }
+
+
+  .D {
+    height: 35px;
+    width: 35px;
+    background-color: var(--sixth-color);
+    border-radius: 50%;
+  }
+
+  .E {
+    height: 35px;
+    width: 35px;
+    background-color: var(--sevan-color);
+    border-radius: 50%;
+  }
+
+  .F {
+    height: 35px;
+    width: 35px;
+    background-color: var(--eight-color);
+    border-radius: 50%;
+  }
+
+  .G {
+    height: 35px;
+    width: 35px;
+    background-color: var(--fifth-color);
+    border-radius: 50%;
+  }
+
+}
+
+/* ========================media query for mobile================================== */
+
+@media(max-width:425px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+  }
+
+  #close {
+    font-size: 20px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    top: 7%;
+    z-index: 1;
+  }
+
+  .dot1, .dot2, .dot3, .dot4 {
+    margin-left: 0px;
+  }
+
+  li {
+    margin-left: 5px;
+  }
+
+  .first h1 {
+    font-size: 20px;
+  }
+
+  #trippledots {
+    font-size: 30px;
+    line-height: 0px;
+  }
+
+  #card-para {
+    padding: 29px 0px;
+    font-size: 15px;
+  
+  }
+
+  h6 {
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  .card {
+    left: 5px;
+    top: 117px;
+  }
+
+  .EditPopup {
+    width: 520px;
+    left: 50%;
+  }
+
+  .popup-model {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+  }
+
+  .inp-group {
+    margin-top: 25px;
+    padding: 5px 0px;
+  }
+
+  input {
+    width: 350px;
+  }
+
+  h3 {
+    padding-bottom: 25px;
+  }
+
+
 }
