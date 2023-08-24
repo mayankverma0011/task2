@@ -119,16 +119,17 @@ img {
   display: flex;
   margin-inline: 80px;
 }
-.flex{position: fixed;
-top: 17%;}
-li {
-  list-style: none;
-  margin-left: 45px;
-  margin-top: 30px;
+.flex{
+  position: fixed;
+top: 22%;
 }
+
 
 a {
   text-decoration: none;
+  margin-left: 40px;
+  /* margin-top: 25px; */
+  line-height: 28px;
 }
 
 a:hover {
@@ -141,6 +142,7 @@ a:hover {
   width: 35px;
   background-color: var(--sixth-color);
   border-radius: 50%;
+ 
 }
 
 .dot2 {
@@ -148,6 +150,7 @@ a:hover {
   width: 35px;
   background-color: var(--sevan-color);
   border-radius: 50%;
+  margin-top: 25px;
 }
 
 .dot3 {
@@ -155,6 +158,7 @@ a:hover {
   width: 35px;
   background-color: var(--eight-color);
   border-radius: 50%;
+  margin-top: 25px;
 }
 
 .dot4 {
@@ -180,6 +184,13 @@ a:hover {
   left: 15%;
   flex-wrap: wrap;
 } 
+
+.mk.completed {
+ text-decoration: line-through;
+ color: #69665c;
+  opacity: 0.6;
+}
+
 
 /* .card-parent {
   display: flex;
@@ -254,52 +265,49 @@ h6 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
+  width: 600px;
   border-radius: 5px;
   border-radius: 7px;
   background: var(--fourth-color);
   box-shadow: 29px 29px 57px #bebebe,
     -29px -29px 57px #ffffff;
   z-index: 10000;
-}
-
-.m {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 40px;
-}
-
-#close {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-h3 {
-  padding: 8px;
-}
-
-li {
-  line-height: -150px;
-}
-
-.inp-group {
-  margin-left: 50px;
-  padding: 10px;
+  padding-bottom: 60px;
 }
 
 input {
   border: 0px;
   outline: 0px;
-  width: 700px;
+  width: 500px;
   padding: 15px;
   background-color: var(--eight-color);
   border-radius: 5px;
 }
-
 #inpt {
-  height: 150px;
+  height: 100px;
+}
+.inp-group {
+ margin-inline: 50px; 
+ /* padding-bottom: 50px; */
+ 
 }
 
+
+.m {
+  display: flex;
+  margin-inline: 40px;
+}
+
+
+
+h3 {
+  padding: 8px;
+}
+
+
+
+
+/* 
 .tags {
   margin-left: 50px;
   padding: 20px;
@@ -345,13 +353,13 @@ h5:hover {
   width: 35px;
   background-color: var(--fifth-color);
   border-radius: 50%;
-}
+} */
 
-h2 {
+/* h2 {
   font-size: 15px;
   margin-left: 50px;
   line-height: 30px;
-}
+} */
 
 
 /* ===========================small popup css========================= */
@@ -475,12 +483,16 @@ h2 {
 
 /* =========================media query for tablet=============== */
 @media(max-width:768px) {
-
+.header{
+  width: 94%;
+  margin-left: 20px;
+}
 .flex{
    position: fixed;
     width: 100%;
     top: 7%;
     z-index: 1;
+    background-color: #fff;
   }
 
   
@@ -506,6 +518,10 @@ h2 {
 
   a {
     text-decoration: none;
+    margin-left: 61px;
+    line-height: 2.2;
+    font-size: 36px;
+    line-height: 1;
   }
 
   a:hover {
@@ -519,7 +535,7 @@ h2 {
     background-color: var(--sixth-color);
     border-radius: 50%;
     display: inline-block;
-    margin-left: 110px;
+    margin-left: 108px;
     margin-top: 50px;
   }
 
@@ -529,7 +545,7 @@ h2 {
     background-color: var(--sevan-color);
     border-radius: 50%;
     display: inline-block;
-    margin-left: 110px;
+    margin-left: 138px;
     margin-top: 50px;
   }
 
@@ -539,7 +555,7 @@ h2 {
     background-color: var(--eight-color);
     border-radius: 50%;
     display: inline-block;
-    margin-left: 110px;
+    margin-left: 138px;
     margin-top: 50px;
   }
 
@@ -555,7 +571,12 @@ h2 {
 
   .card {
     top:117px;
-    left: 83px;
+    left: 48px;
+  }
+
+  .main-card{
+    width: 320px;
+    margin: 10px;
   }
 
   .first h1 {
@@ -570,10 +591,10 @@ h2 {
   .inp-group {
     padding: 25px 0px;
   }
-
+/* 
   #close {
     font-size: 38px;
-  }
+  } */
 
   h3 {
     padding-bottom: 20px;
@@ -639,28 +660,33 @@ h2 {
     justify-content: space-between;
     margin-inline: 20px;
   }
-
+/* 
   #close {
     font-size: 20px;
-  }
+  } */
 
   .flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 40px;
     position: fixed;
     width: 100%;
-    top: 7%;
+    top: 8%;
     z-index: 1;
+   
   }
 
   .dot1, .dot2, .dot3, .dot4 {
-    margin-left: 0px;
+    margin-left: -83px;
   }
 
-  li {
-    margin-left: 5px;
+  a{
+    font-size: 25px;
+    line-height: 1.7;
   }
+  /* li {
+    margin-left: 5px;
+  } */
 
   .first h1 {
     font-size: 20px;
@@ -683,10 +709,13 @@ h2 {
   }
 
   .card {
-    left: 5px;
+    left:8px;
     top: 117px;
   }
-
+.main-card{
+  width: 390px;
+ 
+}
   .EditPopup {
     width: 520px;
     left: 50%;
@@ -704,7 +733,7 @@ h2 {
   }
 
   input {
-    width: 350px;
+    width: 313px;
   }
 
   h3 {
@@ -712,4 +741,28 @@ h2 {
   }
 
 
+}
+
+
+
+
+@media(max-width:320px){
+  .header{
+  display: flex;
+  justify-content: space-between;
+ width: 115%;
+  }
+
+  
+}
+
+
+@media(max-width:375px){
+  .header{
+  display: flex;
+  justify-content: space-between;
+ width: 90%;
+  }
+
+  
 }
